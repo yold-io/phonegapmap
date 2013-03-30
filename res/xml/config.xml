@@ -28,6 +28,11 @@
     <!-- <access origin="https://example.com" /> allow any secure requests to example.com -->
     <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
     <access origin=".*"/>
+    <access origin="http://*.phonegap.com"/>
+    <access origin="http://*.google.com"/>
+    <access origin="http://*.googleapis.com"/>
+    <access origin="http://*.gstatic.com"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
 
     <!-- <content src="http://mysite.com/myapp.html" /> for external pages -->
     <content src="index.html" />
