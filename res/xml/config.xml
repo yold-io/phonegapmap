@@ -27,7 +27,6 @@
 
     <!-- <access origin="https://example.com" /> allow any secure requests to example.com -->
     <!-- <access origin="https://example.com" subdomains="true" /> such as above, but including subdomains, such as www -->
-    <access origin=".*"/>
     <access origin="http://*.phonegap.com"/>
     <access origin="http://*.google.com"/>
     <access origin="http://*.googleapis.com"/>
@@ -41,6 +40,7 @@
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
 <plugins>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
     <plugin name="App" value="org.apache.cordova.App"/>
     <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
     <plugin name="Device" value="org.apache.cordova.Device"/>
