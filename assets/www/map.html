@@ -5,17 +5,30 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
     <title>Google Map Sample</title>
-
+    <style>
+        #map_canvas{
+            height : 95%;
+        }
+        #search_box{
+            margin : auto 0;
+        }
+    </style>
 </head>
 <body>
-<div id="map_canvas"></div>
+    <div id="search_box">
+        <input id="searchTextField" type="text" size="50" placeholder="Anything you want!">
+        <input id="searchButton" type="button" value="Search" onclick="app.searchPlace(document.getElementById('searchTextField').value)" />
+    </div>
+    <div id="map_canvas"></div>
+
+<!--</div>-->
 <script type="text/javascript" src="js/cordova-2.5.0.js"></script>
-<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=[YOUR_API_KEY]&libraries=places&sensor=false"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBSsPTE19uZHZc_pTWQwVyNxko-Q1fzOgw&libraries=places&sensor=false"></script>
 <script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript">
-    app.initialize();
     app.loadMap();
 </script>
 </body>
